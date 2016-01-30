@@ -4,3 +4,8 @@ client/.DS_Store
 coverage/*
 client/.DS_Store
 coverage/*
+client/.DS_Store
+client/PostList/.DS_Store
+client/ViewPost/.DS_Store
+node_modules/log4js/examples/categories.js
+server/.DS_Store
