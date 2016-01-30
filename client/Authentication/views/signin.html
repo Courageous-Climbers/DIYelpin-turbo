@@ -1,0 +1,40 @@
+<div class='login-page'>
+		<!-- <object type="image/svg+xml" data="../../diy.svg" class="user-avatar"></object> -->
+		<img src="../../DIY.png"/>
+
+		<div class="entranceForm">
+			<form class="enter">
+
+				<div class="groups">
+					<input type="text" placeholder='username' ng-model='user.username'>
+					<span class='bar'><span>
+				</div>
+
+				<div class="groups">
+					<input type="text" placeholder='password' ng-model='user.password'>
+					<span class='bar'><span>
+				</div>
+
+				<a class='button' ng-click='signin(user)' ng-model='user' value='Sign In'>Sign In</a>
+			</form>
+		</div>
+
+
+			<a href="/auth/google/" ng-click="check()" class="btn btn-block btn-social btn-google">
+				<span class="fa fa-google"></span>
+				Sign in with Google
+			</a>
+
+			<a ng-click='github()' class="btn btn-block btn-social btn-google">
+				<span class="github"></span>
+				Sign in with Github
+			</a>
+
+			<div class="signup">
+				<h3>Don't have an account?</h3>
+					<a class="button" ng-href="/#/signup">Sign Up</a>
+			</div>
+
+			<p ng-show="signinError">Invalid Credentials</p>
+	</div>
+</div>
