@@ -1,14 +1,14 @@
 {
-  "name": "yelpin",
+  "name": "DIYelpin",
   "version": "0.0.1",
   "description": "Yelp for DIY",
   "engines": {
-    "node": "^5.4.1"
+    "node": "5.3.0",
+    "npm": "3.3.12"
   },
   "main": "server/server.js",
   "scripts": {
-    "start": "node server/server.js",
-    "test": "node_modules/jasmine-node/bin/jasmine-node client/spec/serverSpec.js"
+    "start": "node server/server.js"
   },
   "dependencies": {
     "angular": "^1.4.8",
@@ -18,9 +18,7 @@
     "ng-file-upload": "^11.2.3",
     "passport": "^0.3.2",
     "passport-google-oauth": "^0.2.0",
-    "request": "^2.67.0"
-  },
-  "devDependencies": {
+    "request": "^2.67.0",
     "angular-mocks": "^1.4.8",
     "angular-utils-pagination": "^0.9.4",
     "bcrypt": "^0.8.5",
@@ -56,15 +54,10 @@
     "mongoose": "^4.3.5",
     "morgan": "^1.6.1",
     "ng-file-upload": "^11.2.3",
-    "node": "0.0.0",
     "nodemon": "^1.8.1",
     "path": "^0.12.7",
     "q": "^1.4.1",
     "requirejs": "^2.1.22"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/breakaway-bikers/DIYelpin.git"
   },
   "author": "us",
   "license": "ISC",
