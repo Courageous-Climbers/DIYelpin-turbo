@@ -1,39 +1,29 @@
-![DIYelpin Logo](http://s11.postimg.org/5ltzi8csj/DIY.png)
-======================
 
-## Table of Contents
-
-- [Installation](#installation)
-- [Dependencies](#dependencies)
-  - [Bcrypt](#bcrypt)
-  - [Angular-UI](#angular-ui)
-- [Features](#features)
-  - [Public DIY-Posts](#diy-posts)
-  - [Food Contest](#food-contest)
-- [Contributing](#contributing)
-- [License](#license)
-
-
-## Installation
-To work on this project, fork and clone this repo.
-
-## Dependencies
-
-### Bcrypt
-We used Bcrypt to authenticate users, salt and hash users' login credentials stored to a database. We've included Bcrypt in
-the package.json file so that it will be automatically installed when you run npm install .
-
-### Angular-UI
-We used Angular-UI for the app's routes and states. Angular-UI is included in the package.json file and is installed
-automatically when you run npm install .
+## Overview
+DIYelpin-TURBO is a site where people can share their DIY projects with others.  Users view all posts submitted and can up-vote projects that they like.  There is a contest page where users can submit entries for a food contest that creates 5 random ingredients each day.
 
 ## Features
 
-### DIY-Posts
-Once logged in, users may create a post about any Do-It-Yourself project they would like to share.
+### View DIY-Posts
+The main login page is a tiled list view of DIY projects that have been submitted.  Each post can be up-voted and there are filters to help users to search based on text and category.  The items on the page are also sortable by votes and date.
+
+Below is a preview of the main page.
+
+![DIYelpin Main Page](readme_images/DIYelpin-main.png)
+
+### Create a DIY-Post
+Once logged in, users may create a post about any Do-It-Yourself project they would like to share.  The instructions for the project are Markdown formatted. A preview window shows how the markdown formatted text will be displayed (as shown below).
+
+![DIYelpin Main Page](readme_images/add-post.png)
 
 ### Food Contest
-If they navigate to /contest , users can participate in a food challenge involving 5 random ingredients for that day.
+If a user navigates to contest, users can participate in a food challenge involving 5 random ingredients for that day.  There is a drop down in the top left corner, so that past contests can be viewed.
+
+![DIYelpin Main Page](readme_images/contest.png)
+
+## Technologies
+
+This is a MEAN app.  Calling `npm install` from the root folder will install all required dependencies.
 
 ## Contributing
 Contributors should upload changes to their fork and make a pull request!
